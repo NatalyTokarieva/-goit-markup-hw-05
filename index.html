@@ -18,9 +18,9 @@
       <nav class="main-nav">
           <a lang="en" href="./index.html" class="logo"> <span class="logoweb">Web</span>Studio</a>
           <ul class=" site-nav list">
-              <li class="item"><a href="./studio.html" class="link current">Студия</a></li>
-              <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-              <li class="item"><a href="" class="link">Контакты</a></li>
+              <li class="item"><a href="./studio.html" class="menu-link current">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+              <li class="item"><a href="" class="menu-link">Контакты</a></li>
           </ul>
        </nav>
            <ul class=" auth-nav list">
@@ -52,7 +52,9 @@
         <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="first-button">Заказать услугу</button>
+            <button data-modal-open type="button" class="first-button">Заказать услугу</button>
+
+            
             </div>
         </section>
     <!--Чем занимаются на проекте-->
@@ -67,7 +69,7 @@
                         <use href="./images/icons.svg#iconantenna"></use>
                    </svg></div>
                     <h3 class="title" >Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="item">
                     <div class="clock-icon">
@@ -75,7 +77,7 @@
                         <use href="./images/icons.svg#iconclock"></use>
                    </svg></div>
                     <h3 class="title" >Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="item">
                     <div class="clock-icon">
@@ -83,7 +85,7 @@
                         <use href="./images/icons.svg#icondiagram"></use>
                    </svg></div>
                     <h3 class="title" >Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <p class="title-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="item">
                     <div class="clock-icon">
@@ -91,7 +93,7 @@
                         <use href="./images/icons.svg#iconastronaut"></use>
                    </svg></div>
                     <h3 class="title" >Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="title-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
        </div>
@@ -100,11 +102,28 @@
         <section class="section image-section">
    <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
+     
         <ul class="image-list list">
-            <li class="item"><img src="./images/img.jpg" alt="Набираем html" width="370" height="294"></li>
-            <li class="item"><img src="./images/img1.jpg" width="370" height="294" alt="Копируем на телефон"></li>
-            <li class="item"><img src="./images/img2(2).jpg" width="370" height="294" alt="Картинка"></li>
+       
+            <li class="item-image item">
+                <div class="image-action">
+                <img src="./images/img.jpg" alt="Набираем html" width="370" height="294">
+                
+                <p class="image-text">Десктопные приложения</p></div>
+            </li>
+            <li class="item">
+                <div class="image-action">
+                <img src="./images/img1.jpg" width="370" height="294" alt="Копируем на телефон">
+                <p class="image-text">Мобильные приложения</p></div>
+
+            </li>
+            <li class="item">
+                <div class="image-action">
+                <img src="./images/img2(2).jpg" width="370" height="294" alt="Картинка">
+                <p class="image-text">Дизайнерские решения</p></div>
+            </li>
         </ul>
+    
    </div>
         </section>
         <!--Наша команда-->
@@ -115,7 +134,7 @@
                     <li class="item"><img class="img-people" src="./images/man1.jpg" width="270" height="260" alt="Игорь Демьяненко">
                         <div class="socials">
                         <h3 class="title-commands">Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                        <p class="social-text">Product Designer</p>
                         <div class="instagram-icon">
                         <a href="#" class="instagram-item">
                             <svg class="instagram">
@@ -139,7 +158,7 @@
                     <li class="item"><img class="img-people" src="./images/woman.jpg" width="270" height="260" alt="Ольга Репина">
                         <div class="socials">
                         <h3 class="title-commands">Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                        <p class="social-text">Frontend Developer</p>
                         <div class="instagram-icon">
                             <a href="#" class="instagram-item">
                                 <svg class="instagram">
@@ -163,7 +182,7 @@
                     <li class="item"><img class="img-people" src="./images/man2.jpg" width="270" height="260" alt="Николай Тарасов">
                         <div class="socials">
                         <h3 class="title-commands">Николай Тарасов</h3>
-                        <p>Marketing</p>
+                        <p class="social-text">Marketing</p>
                         <div class="instagram-icon">
                             <a href="#" class="instagram-item">
                                 <svg class="instagram">
@@ -187,7 +206,7 @@
                     <li class="item"><img class="img-people" src="./images/man3.jpg" width="270" height="260" alt="Михаил Ермаков">
                         <div class="socials">
                         <h3 class="title-commands">Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                        <p class="social-text">UI Designer</p>
                         <div class="instagram-icon">
                                 <a href="#" class="instagram-item">
                                     <svg class="instagram">
@@ -317,5 +336,16 @@
     </div>
    </div>
 </footer>
+
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <svg class="close-icon icon" data-modal-close >
+            <use href="./images/icons.svg#iconclose"></use>
+       </svg></div>
+    </div>
+</div>
+
+<script src="./modal.js"></script>
 </body>
 </html>
