@@ -380,7 +380,7 @@ img{
     padding: 12px;
 
     transition: background-color 250ms var(--cubic);
-    transition: color 250ms var(--cubic);
+  
 }
 .instagram-item:hover{
     background-color: var(--accent-color);
@@ -656,7 +656,7 @@ img{
 
 
     transition: border 250ms var(--cubic);
-    transition: color 250ms var(--cubic);
+   
 
      
 }
@@ -800,10 +800,10 @@ img{
     transition: transform 250ms var(--cubic);
 
     transform: translateY(100%);
-    opacity: 0;
+   
 
   }
  .filter-link:hover .porto-text{
-     opacity: 1;
+   
      transform: translateY(0);
  }
