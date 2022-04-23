@@ -11,6 +11,7 @@
     --bg-button-a: rgba(245, 244, 250, 1);
     --footer-coloe: rgba(255, 255, 255, 0.1);
     --color-position:  rgba(47, 48, 58, 0.8);
+    --cubic:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 body{
@@ -137,10 +138,7 @@ img{
     text-decoration: none;
     cursor: pointer;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-
+    transition: color 250ms var(--cubic);
     position: relative;
  }
  
@@ -158,7 +156,6 @@ img{
 
 
 }
-
 
 .menu-link:hover,
 .menu-link:focus {
@@ -182,9 +179,7 @@ img{
     text-decoration: none;
     cursor: pointer;
 
-    transition-property:color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: color 250ms var(--cubic);
 
 }
 
@@ -207,9 +202,7 @@ img{
     text-decoration: none;
     color: var(--primery-text-color);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: color 250ms var(--cubic);
 
     
 }
@@ -295,12 +288,7 @@ img{
     border-radius: 4px;
     min-width: 200px;
     padding: 10px 32px;
-    border: 1px solid transparent;
-
-  
- 
-
- }
+    border: 1px solid transparent;}
 
 
  .secondary-button {
@@ -316,15 +304,10 @@ img{
     cursor: pointer;
     border: 1px solid transparent;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: background-color 250ms var(--cubic);
+    transition: color 250ms var(--cubic);
+    transition: box-shadow 250ms var(--cubic);
+
    
  }
 
@@ -396,12 +379,8 @@ img{
     color:var(--icon-border);
     padding: 12px;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: background-color 250ms var(--cubic);
+    transition: color 250ms var(--cubic);
 }
 .instagram-item:hover{
     background-color: var(--accent-color);
@@ -560,156 +539,11 @@ img{
     margin-right: 30px;
     margin-bottom: 30px;
 }
-/*window*/
-
-.img-close{
-    position: relative;
-    overflow: hidden;
-}
-.filter-link:hover{
-    
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.close-text{
-    display: inline-block;
-    font-size: 18px;
-    line-height: 1.56;
-    color:var(--button-text-color);
-   padding: 63px 24px;
-   
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   
-   opacity:0 ;
-   transition-property: opacity;
-   transition-duration: 250ms;
-   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-
-.filter-link:hover .close-text{
-    opacity: 1;
-}
-.filter-link{
-    display: block;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-   
-
-}
-.img-close:hover::before{
-   
-    transform: translateY(0);
-}
-.img-close::before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-  
-   
-   transition-property: transform;
-   transition-duration: 250ms;
-   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
-   transform: translateY(100%);
-}
-
-/*window*/
 
 
-        /* position */
-        .work-img{
-            position: relative;  
-            overflow: hidden;          
-        }
-        .work-site{
-            position: absolute;
-            top: 50%;
-            left:50%;
-            transform: translate(-50%,50%);
-            width: 100%;
-            height: 100%;
-            text-align: left;    
-            padding:63px 27px;
-
-            background-color: rgba(33, 150, 243, 0.9);
- 
-            color: var(--white-color);
-                       
-            font-size: 18px;
-            line-height: 1.556;
-            
-            opacity: 0;
-            transition: transform 250ms var(--cubic)  ;
-        }       
-        .filter-link:hover .work-site{
-            opacity: 1;
-            transform: translate(-50%,-50%);
-
-        }
 
 
-.product-thumb{
-    position: relative;
-    overflow: hidden;
-}
-.product:hover .product-action{
-    opacity: 1;}
 
-.product:hover .product-thumb::before{
-    transform: translateY(0);
-    opacity: 1;
-}
-.product-thumb::before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    opacity: 0;
-
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
-    transform: translateY(100%);}
-
-.product-action{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,50%);
-    width: 100%;
-    height: 100%;
-    
-    opacity: 0;
-
-    display: inline-block;
-    font-size: 18px;
-    line-height: 1.56;
-    color:var(--button-text-color);
-    padding: 63px 24px;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-
-/*window*/
 
 
 .picture-list .item:nth-child(3n){
@@ -821,12 +655,8 @@ img{
     justify-content: center;  
 
 
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: border 250ms var(--cubic);
+    transition: color 250ms var(--cubic);
 
      
 }
@@ -872,7 +702,7 @@ img{
     .twitter{
         background-color: var(--footer-coloe);
     }
-
+/*modal*/
     .backdrop{
         position: fixed;
         top: 0;
@@ -901,6 +731,8 @@ img{
 
         width: 528px;
         height: 581px;
+
+        cursor: pointer;
      
         background-color: var(--button-text-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -919,9 +751,10 @@ img{
 
     }
     .button-close{
-        position: absolute;
-        right: 8px;
-        top: 8px;
+       position: absolute;
+       right: 8px;
+       top: 8px;
+
         border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: var(--button-text-color);
         border-radius: 50%; 
@@ -930,60 +763,47 @@ img{
         cursor: pointer;
     }
 
-    /* .backdrop{
-                position: fixed;
-                background-color: rgba(0, 0, 0, 0.2);
-                top:0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                
-                opacity: 1;
-                transition: opacity 250ms var(--cubic);
+    
 
-            }
-            .modal{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                
-                
-                transform: translate(-50%,-50%) scale(1);
+.filter-link:hover{
+    
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    
+.filter-link{
+        display: block;
+        transition: box-shadow 250ms var(--cubic);
+      }
 
-                height: 581px;
-                width: 528px;
-                
-                
-                background: #FFFFFF;
-                box-shadow:
-                0px 1px 3px rgba(0, 0, 0, 0.12),
-                0px 1px 1px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 4px;
-                padding: 15px;
-                transition: transform 250ms var(--cubic) ;
+.porto-filter{
+    position: relative;
+    overflow: hidden;
+   
+}
 
-            } 
-            
-            .backdrop.is-hidden{
-                pointer-events: none;
-                opacity: 0;
-            }
-            .backdrop.is-hidden .modal{
-                transform: translate(-50%,-50%) scale(0.1);
-            }
-            .icon-close{
-                width: 11px;
-                height: 11px;                               
-            }
-            .button-close{
-                position: absolute;
-                right: 8px;
-                top: 8px;
-                background: #FFFFFF;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                cursor: pointer;}
-                */
+  .porto-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--button-text-color);
+    background-color:rgba(33, 150, 243, 0.9);
+
+ 
+    transition: transform 250ms var(--cubic);
+
+    transform: translateY(100%);
+    opacity: 0;
+
+  }
+ .filter-link:hover .porto-text{
+     opacity: 1;
+     transform: translateY(0);
+ }
