@@ -627,14 +627,14 @@ img{
 /*window*/
 
 
-.product{
+.product-thumb{
     position: relative;
     overflow: hidden;
 }
 .product:hover .product-action{
     opacity: 1;}
 
-.product:hover .product-thumb::before{
+/*.product:hover .product-thumb::before{
     transform: translateY(0);
     opacity: 1;
 }
@@ -653,12 +653,13 @@ img{
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
-    transform: translateY(100%);
-}
+    transform: translateY(100%);*/
+
 .product-action{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
     width: 100%;
     height: 100%;
     
@@ -669,7 +670,8 @@ img{
     line-height: 1.56;
     color:var(--button-text-color);
     padding: 63px 24px;
-
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
