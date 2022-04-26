@@ -929,6 +929,11 @@ img{
     position: absolute;
     top: 29px;
     left: 15px;
+
+    transition: fill 250ms var(--cubic);
+}
+.modal-class input:hover + .modal-icon{
+    fill: var(--accent-color);
 }
 
 
@@ -984,12 +989,14 @@ img{
 .modal-policy{
   margin-top: 20px;
   margin-bottom: 30px;
+
 }
 
 .label-checkbox{
     position: relative;
     display: block;
     padding-left: 25px;
+    cursor: pointer;
 }
 .label-checkbox::before{
    position: absolute;
