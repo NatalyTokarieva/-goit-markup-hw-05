@@ -898,8 +898,7 @@ img{
     position: relative;
 }
 .modal-icon{
-    width: 18px;
-    height: 18px;
+   
     position: absolute;
     top: 32px;
     left: 15px;
@@ -910,7 +909,19 @@ img{
     fill: var(--accent-color);
 }
 
+.name-icon{
+    width: 12px;
+    height: 12px;
+}
+.phone-icon{
+    width: 14px;
+    height: 14px;
+}
 
+.mailicon{
+    width: 22px;
+    height: 16px;
+}
 .modal-class textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
 
