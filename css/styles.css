@@ -975,6 +975,10 @@ img{
 .modal-policy{
   margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
 }
 
