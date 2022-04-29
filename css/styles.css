@@ -881,6 +881,7 @@ img{
  margin-bottom: 10px;
  margin-top: 4px;
  padding-left: 42px;
+outline: var(--accent-color);
 
  border: 1px solid rgba(33, 33, 33, 0.2);
  border-radius: 4px;
@@ -924,7 +925,7 @@ img{
 }
 .modal-class textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
-
+    
      border-radius: 4px;
      transition: border 250ms var(--cubic);
 }
@@ -932,6 +933,7 @@ img{
 .modal-class textarea:focus{
     border: 1px solid var(--accent-color); 
     cursor: pointer;
+    outline: var(--accent-color);
 }
 
 .modal-head{
@@ -978,7 +980,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 
 }
 
