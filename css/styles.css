@@ -906,7 +906,8 @@ outline: var(--accent-color);
 
     transition: fill 250ms var(--cubic);
 }
-.modal-class input:hover + .modal-icon{
+.modal-class input:hover + .modal-icon,
+.modal-class input:focus + .modal-icon{
     fill: var(--accent-color);
 }
 
