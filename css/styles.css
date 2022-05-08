@@ -785,7 +785,7 @@ img{
 .mail-submit-form{
     display: flex;
     align-items: flex-end;
-    margin-left: auto ;
+    margin-left: auto;
 }
 
  .mail-form{
@@ -834,7 +834,7 @@ img{
 }
 .submit{
    width: 200px;
-   height: 50px ;
+   height: 50px;
    margin-left: 12px;
    background:var(--accent-color);
    border:var(--accent-color);
@@ -964,9 +964,6 @@ outline: var(--accent-color);
     resize: none;
     padding: 12px 16px;
     margin-top: 4px;
-
-  
-    
 }
 
 
